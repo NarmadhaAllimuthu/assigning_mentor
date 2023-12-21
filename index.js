@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 app.use(cors({
-    origin:["http://localhost:3000","https://main--dancing-tanuki-aba324.netlify.app/"],
+    origin:"https://main--dancing-tanuki-aba324.netlify.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
 }))
