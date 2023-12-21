@@ -1,11 +1,13 @@
 
 const express= require("express");
-// const nodemon = require("nodemon");
+
 const cors = require("cors");
 const bodyparser = require("body-parser");
 const {MongoClient, ObjectId} = require("mongodb");
+const dotenv = require("dotenv").config();
+// console.log(process.env.DB)
 
-const URL="mongodb://localhost:27017";
+const URL=process.env.DB;
 
 
 const app = express();
